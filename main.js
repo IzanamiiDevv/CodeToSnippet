@@ -1,8 +1,8 @@
-document.getElementById('btn').addEventListener('click',()=> {
+document.getElementById('editor').addEventListener('input',()=> {
     const code = document.getElementById('editor').innerText
     const snippet = compileToSnippet('test','tst',code);
 
-    console.log(code)
+    console.log(snippet)
 });
 
 function compileToSnippet(prefix,description,script) {
