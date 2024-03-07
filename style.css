@@ -6,4 +6,19 @@
 body {
     background-color: rgb(60, 61, 63);
     color: antiquewhite;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#editor {
+    margin-top: 10vh;
+    padding: 10px 10px 10px 10px;
+    flex: 1;
+    height: 75vh;
+    background-color: rgb(26, 26, 26);
+    color: white;
 }
