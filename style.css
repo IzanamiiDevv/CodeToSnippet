@@ -14,8 +14,12 @@ h1 {
     margin-top: 5vh;
 }
 
+h3 {
+    margin-top: 5vh;
+}
+
 #editor {
-    margin-top: 10vh;
+    margin-top: 1vh;
     padding: 10px 10px 10px 10px;
     flex: 1;
     height: 75vh;

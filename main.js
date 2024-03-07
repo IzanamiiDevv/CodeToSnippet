@@ -1,3 +1,10 @@
+document.getElementById('btn').addEventListener('click',()=> {
+    const code = document.getElementById('editor').innerText
+    const snippet = compileToSnippet('test','tst',code);
+
+    console.log(code)
+});
+
 function compileToSnippet(prefix,description,script) {
     const lines = script.split('\n');
     const snippet = {
