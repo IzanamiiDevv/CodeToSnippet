@@ -14,15 +14,28 @@ h1 {
     margin-top: 5vh;
 }
 
-h3 {
-    margin-top: 5vh;
-}
+
 
 #editor {
-    margin-top: 1vh;
     padding: 10px 10px 10px 10px;
     flex: 1;
     height: 75vh;
     background-color: rgb(26, 26, 26);
     color: white;
+}
+
+.upper-container {
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    height: 3vh;
+    position: relative;
+    background-color: rgb(72, 56, 129);
+}
+
+#convert {
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin-left: calc(65vw);
 }
