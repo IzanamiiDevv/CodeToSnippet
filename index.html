@@ -1,13 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptToSnippet</title>
+    <script defer type="module" src="main.js"></script>
+</head>
+<body>
+    <h1>CodeToSnippet</h1>
+    <div class="upper-container">
+        <h4>Paste or Write Your Code Down Below:</h4>
+        <button id="convert">Copy Converted Code</button>
+    </div>
+    <div id="editor" contenteditable="true" spellcheck="false">
+        //Your Code Goes Here...
+    </div>
+</body>
 </html>
