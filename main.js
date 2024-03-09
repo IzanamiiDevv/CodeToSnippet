@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const copyButton = document.getElementById('copyButton');
 
   copyButton.addEventListener('click', function() {
+    window.location.href = '#Editor';
     // Get the current value from the editor
     const editorValue = document.getElementById('editor').innerText;
 
