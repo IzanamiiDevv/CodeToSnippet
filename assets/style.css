@@ -51,7 +51,7 @@ h1 {
   h1 {
     text-align: center;
     font-family: Tahoma, Arial, sans-serif;
-    color: #ffffff;
+    color: rgb(72, 56, 129);
     margin: 80px 0;
   }
   
@@ -70,14 +70,14 @@ h1 {
     font-size: 1em;
     padding: 10px;
     color: #fff;
-    border: 2px solid #06D85F;
+    border: 2px solid rgb(72, 56, 129);
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
   }
   .button:hover {
-    background: #06D85F;
+    background: rgb(72, 56, 129);
   }
   
   .overlay {
@@ -122,7 +122,7 @@ h1 {
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: rgb(72, 56, 129);
   }
   .popup .content {
     max-height: 30%;
@@ -130,11 +130,11 @@ h1 {
     color: #333;
   }
   
-  @media screen and (max-width: 700px){
+@media screen and (max-width: 700px){
     .box{
       width: 70%;
     }
     .popup{
       width: 70%;
     }
-  }
+}
