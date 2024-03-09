@@ -1,4 +1,3 @@
-import './style.css'
-import compileToSnippet from './converter'
+import compileToSnippet from './converter';
 
 
