@@ -2,12 +2,14 @@ import compileToSnippet from './src/converter';
 
 document.addEventListener('DOMContentLoaded', function() {
   const copyButton = document.getElementById('copyButton');
-  const copyText = "test copy";
 
   copyButton.addEventListener('click', function() {
+    // Get the current value from the editor
+    const editorValue = document.getElementById('editor').innerText;
+
     // Create a temporary textarea element to hold the text
     const textarea = document.createElement('textarea');
-    textarea.value = copyText;
+    textarea.value = editorValue;
 
     // Append the textarea to the document
     document.body.appendChild(textarea);
@@ -24,10 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.removeChild(textarea);
 
     // Give some feedback to the user
-    alert('Text copied to clipboard: ' + copyText);
+    alert('Text copied to clipboard: ' + editorValue);
   });
-});
 
-document.getElementById('editor').addEventListener('input',()=>{
-    console.log(compileToSnippet(null,null,document.getElementById('editor').innerText))
+  document.getElementById('editor').addEventListener('input', () => {
+    // Update the copyText variable every time the input event is triggered
+    const editorValue = document.getElementById('editor').innerText;
+    copyText = compileToSnippet(null, null, editorValue);
+    console.log(compileToSnippet(null, null, editorValue));
+  });
 });
