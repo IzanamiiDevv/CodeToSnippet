@@ -8,18 +8,8 @@
     <script defer type="module" src="main.js"></script>
 </head>
 <body>
-  <nav>
-    <a href="#HomePage">Home</a>
-    <a href="#Config">Config</a>
-    <a href="#Editor">Edit</a>
-  </nav>
     <section class="window" id="HomePage">
       <h1>CodeToSnippet</h1>
-
-    </section>
-    <section class="window" id="Config">
-      <h1>Configuration</h1>
-      
 
     </section>
     <section class="window" id="Editor">
@@ -29,7 +19,16 @@
       <div id="editor" contenteditable="true" spellcheck="false">
           //Your Code Goes Here...
       </div>
-      <button id="copyButton">Copy</button>
+      <a class="button" href="#popup1">Convert</a>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+          <h2>Configuration</h2>
+          <a class="close" href="#Editor">&times;</a>
+          <div class="content">
+              <h2>Hello World</h2>
+          </div>
+      </div>
+  </div>
     </section>
 </body>
 </html>

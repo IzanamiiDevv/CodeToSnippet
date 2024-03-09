@@ -1,57 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: rgb(60, 61, 63);
-    color: antiquewhite;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 5vh;
-}
-
-.window {
+    font-family: Arial, sans-serif;
+    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+    background-size: cover;
     height: 100vh;
-}
-
-#editor {
-    padding: 10px 10px 10px 10px;
-    flex: 1;
-    height: 75vh;
-    background-color: rgb(26, 26, 26);
-    color: white;
-}
-
-.upper-container {
-    padding: 5px 10px 5px 10px;
-    display: flex;
-    height: 3vh;
-    position: relative;
-    background-color: rgb(72, 56, 129);
-}
-
-#convert {
-    border-style: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-    margin-left: calc(65vw);
-}
-
-.content {
-    color: #333;
-}
-
+  }
   
   h1 {
     text-align: center;
     font-family: Tahoma, Arial, sans-serif;
-    color: #ffffff;
+    color: #06D85F;
     margin: 80px 0;
   }
   
@@ -127,7 +84,6 @@ h1 {
   .popup .content {
     max-height: 30%;
     overflow: auto;
-    color: #333;
   }
   
   @media screen and (max-width: 700px){
