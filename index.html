@@ -8,13 +8,20 @@
     <script defer type="module" src="main.js"></script>
 </head>
 <body>
-    <h1>CodeToSnippet</h1>
-    <div class="upper-container">
+    <section class="window" id="HomePage">
+      <nav>
+        <a href="#Editor">Gago</a>
+      </nav>
+      <h1>CodeToSnippet</h1>
+    </section>
+    <section class="window" id="Editor">
+      <div class="upper-container">
         <h4>Paste or Write Your Code Down Below:</h4>
         <button id="convert">Copy Converted Code</button>
-    </div>
-    <div id="editor" contenteditable="true" spellcheck="false">
-        //Your Code Goes Here...
-    </div>
+      </div>
+      <div id="editor" contenteditable="true" spellcheck="false">
+          //Your Code Goes Here...
+      </div>
+    </section>
 </body>
 </html>
