@@ -10,6 +10,11 @@
 <body>
     <section class="window" id="HomePage">
       <h1>CodeToSnippet</h1>
+      <p>Convert Your Code Into VSCode JSON Snippet Format</p>
+      
+      <div class="btn-container">
+        <a class="button" href="#Editor">Get Started</a>
+      </div>
 
     </section>
     <section class="window" id="Editor">
@@ -25,9 +30,17 @@
     <div id="popup1" class="overlay">
       <div class="popup">
           <h2>Configuration</h2>
+          <hr>
+          <div class="popup-cont">
+            <label for="pre">Prefix:</label>
+            <input type="text" id="pre" placeholder="Hello World">
+          <br>
+            <label for="desc">Description:</label>
+            <input type="text" id="desc" placeholder="Write Something...">
+          </div>
           <a class="close" href="#Editor">&times;</a>
           <div class="content">
-            <button id="copyButton">Copy Code</button>
+            <button id="copyButton" class="button">Copy Code</button>
           </div>
       </div>
   </div>

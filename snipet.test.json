@@ -1,0 +1,7 @@
+{
+    "prefix": "log",
+    "body": [
+      "console.log(\"Hello World\");"
+    ],
+    "description": "basic console.log snippet"
+  }
