@@ -1,3 +1,3 @@
-import compileToSnippet from './converter';
+import compileToSnippet from './src/converter';
 
 
