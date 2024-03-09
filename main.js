@@ -1,4 +1,4 @@
-import compileToSnippet from './src/converter';
+import compileToSnippet from './src/converter.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   const copyButton = document.getElementById('copyButton');
