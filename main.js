@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create a temporary textarea element to hold the text
     const textarea = document.createElement('textarea');
-    textarea.value = editorValue;
+    textarea.value = compileToSnippet(null, null, editorValue);
 
     // Append the textarea to the document
     document.body.appendChild(textarea);
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.removeChild(textarea);
 
     // Give some feedback to the user
-    alert('Text copied to clipboard: ' + editorValue);
+    copySucess()
   });
 
   document.getElementById('editor').addEventListener('input', () => {
@@ -36,3 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(compileToSnippet(null, null, editorValue));
   });
 });
+
+function copySucess(){
+    console.log('Copied Successfull')
+}
